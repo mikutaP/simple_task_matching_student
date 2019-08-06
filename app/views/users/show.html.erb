@@ -1,128 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style type="text/css">
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .w3-myfont {
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      
-    }
-    li+ li {
-      border-left: 1px solid #333;
-    }
-    dt {
-      margin-top: 10px;
-    }
-    img {
-    width:100%;
-    max-width: 100%;
-    height: auto;
-    }
-    .profilebox {
-       background-color: #F2F2F2; 
-       padding: 10px; 
-    }
-    strong {
-      font-size: 20px;
-    }
-    </style>
-    <title>W3.CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  </head>
-  <body>
-    <div class="w3-container w3-teal">
-      <h1>プロフィール</h1>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+li+ li {
+  border-left: 1px solid #333;
+}
+dt {
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+</style>
+<body>
+<div class="w3-container w3-myfont">
+  <!-- 基本情報 -->
+  <div class="w3-container row"> <!-- 写真と個人情報を入れる箱 -->
+    <div class="col-md-4"> <!-- 写真を入れる箱 -->
+      <p><image src="" alt="企業写真"></image></p>
     </div>
-    <div class="w3-container w3-myfont" 
-    style="background: #f2f2f2; padding: 10px; box-shadow: -8px 8px 50px -10px;">
-      <!-- 基本情報 -->
-      <div class="w3-container row"> <!-- 写真と個人情報を入れる箱 -->
-      <div class="col-md-4"> <!-- 写真を入れる箱 -->
-        <p><image src="../assets/download.jpg" alt="企業写真"></image></p>
+    <div class="col-md-8"> <!-- 個人情報を入れる箱 -->
+      <dl class="list-group">
+        <dt>名前</dt>
+        <dd>Sun*（旧framgia）</dd>
+        <dt>住所</dt>
+        <dd>東京都千代田区神田紺屋町15番地 グランファースト神田紺屋町（旧 神田TKMビル）9F</dd>
+        <dt>連絡先</dt>
+        <dd>03-6419-7633</dd>
+      </dl>
+    </div>
+  </div>
+  <!-- 自己紹介 -->
+  <p class="w3-large"><strong>自己紹介</strong></p>
+  <p style="border: 1px solid #333">心を揺さぶるAwesome!を 
+創る機会が平等にある世界<br>
+本気で課題に挑む人たちと、事業を通して社会にポジティブなアップデートを仕掛けていくこと</p>
+  <!-- 作業関連 -->
+  <div class="w3-container row">
+    <p class="w3-large" style="margin-top: 10px;"><strong>作業一覧</strong></p>
+    <button class="btn btn-primary btn-lg" style="width: 30%; margin: 0 0 0 auto;"><a hre="#">新規投稿</a></button>
+  </div>
+  <ul class="list-group" style="list-style:none; margin-top: 10px;">
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
+      <li class="col-md-6">作業名</li>
+      <li class="col-md-2" style="text-align: center;"><a href=>完了</a></li>
+      <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+      <li class="col-md-2" style="text-align: center;">作業中</li>
       </div>
-      <div class="col-md-8"> <!-- 個人情報を入れる箱 -->
-        <dl class="list-group">
-          <dt>名前</dt>
-          <dd>Sun*（旧framgia）</dd>
-          <dt>住所</dt>
-          <dd>東京都千代田区神田紺屋町15番地 グランファースト神田紺屋町（旧 神田TKMビル）9F</dd>
-          <dt>連絡先</dt>
-          <dd>03-6419-7633</dd>
-        </dl>
-      </div>
     </div>
-      <!-- 自己紹介 -->
-      <p class="w3-large"><strong>自己紹介</strong></p>
-      <p style="border: 1px solid #333; border-radius: 5px; background:">心を揺さぶるAwesome!を 
-  創る機会が平等にある世界<br>
-  本気で課題に挑む人たちと、事業を通して社会にポジティブなアップデートを仕掛けていくこと</p>
-      <!-- 作業関連 -->
-      <div class="w3-container row">
-      <p class="w3-large" style="margin-top: 10px;"><strong>作業一覧</strong></p>
-      <button class="btn btn-success btn-lg" style="width: 20%; margin: 0 0 0 auto;"><a hre="#">新規投稿</a></button>
-    </div>
-      <ul class="list-group" style="list-style:none; margin-top: 10px;">
-      <div class="list-group-item" style="border: 1px solid #333">
-        <div class="row">
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
         <li class="col-md-6">作業名</li>
-        <li class="col-md-2" style="text-align: center;"><a href=>完了</a></li>
+        <li class="col-md-2" style="text-align: center;"></li>
         <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
-        <li class="col-md-2" style="text-align: center;">作業中</li>
-        </div>
+        <li class="col-md-2" style="text-align: center;">依頼中</li>
       </div>
-      <div class="list-group-item" style="border: 1px solid #333">
-        <div class="row">
-          <li class="col-md-6">作業名</li>
-          <li class="col-md-2" style="text-align: center;"><a href=>削除</a></li>
-          <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
-          <li class="col-md-2" style="text-align: center;">依頼中</li>
-        </div>
-      </div>
-      <div class="list-group-item" style="border: 1px solid #333">
-        <div class="row">
-          <li class="col-md-6">作業名</li>
-          <li class="col-md-2" style="text-align: center;"><a href="#comment" data-toggle="collapse">詳細</a></li>
-          <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
-          <li class="col-md-2" style="text-align: center;">非承認</li>
-        </div>
-      </div>
-      <div id="comment" class="list-group-item collapse" style="border: 1px solid #333">
-        <div class="row">
-          <li class="col-md-10">コメント</li>
-          <li class="col-md-2" style="text-align: center;"><a href=>再編集</a></li>
-        </div>
-      </div>
-      <div class="list-group-item" style="border: 1px solid #333">
-        <div class="row">
-          <li class="col-md-6">作業名</li>
-          <li class="col-md-2" style="text-align: center;"><a href=>支払い</a></li>
-          <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
-          <li class="col-md-2" style="text-align: center;">完了</li>
-        </div>
-      </div>
-      <div class="list-group-item" style="border: 1px solid #333">
-        <div class="row">
-          <li class="col-md-6">作業名</li>
-          <li class="col-md-2" style="text-align: center;"></li>
-          <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
-          <li class="col-md-2" style="text-align: center;">未承認</li>
-        </div>
-      </div>
-    </ul>
     </div>
-  </body>
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
+        <li class="col-md-6">作業名</li>
+        <li class="col-md-2" style="text-align: center;"></li>
+        <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+        <li class="col-md-2" style="text-align: center;">非承認</li>
+      </div>
+    </div>
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
+        <li class="col-md-10">コメント</li>
+        <li class="col-md-2" style="text-align: center;"><a href=>再編集</a></li>
+      </div>
+    </div>
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
+        <li class="col-md-6">作業名</li>
+        <li class="col-md-2" style="text-align: center;"><a href=>支払い</a></li>
+        <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+        <li class="col-md-2" style="text-align: center;">完了</li>
+      </div>
+    </div>
+    <div class="list-group-item" style="border: 1px solid #333">
+      <div class="row">
+        <li class="col-md-6">作業名</li>
+        <li class="col-md-2" style="text-align: center;"></li>
+        <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+        <li class="col-md-2" style="text-align: center;">未承認</li>
+      </div>
+    </div>
+  </ul>
+  
+</div>
+</body>
 </html>
 
           
