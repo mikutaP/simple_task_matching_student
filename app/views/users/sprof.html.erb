@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .w3-myfont {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      
+    }
+    li+ li {
+      border-left: 1px solid #333;
+    }
+    dt {
+      margin-top: 10px;
+      /* float: left; */
+    }
+    /*dd {
+      margin-left: 80px;
+    }*/
+    img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    }
+    .profilebox {
+       background-color: #F2F2F2; 
+       padding: 10px; 
+    }
+    strong {
+      font-size: 20px;
+    }
+    .profbox {
+      margin-bottom: 10px;
+    }
+    </style>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <div class="w3-container w3-teal">
+      <h1>プロフィール</h1>
+    </div>
+    <!-- 内容 -->
+    <div class="w3-container w3-myfont" style="background: #f2f2f2; padding: 10px; box-shadow: -8px 8px 50px -10px;">
+      <!-- 写真と個人情報を入れる箱 -->
+      <div class="w3-container row">
+        <!-- 写真 --> 
+        <div class="col-md-4" style="padding: 0;">
+          <p><image src="../assets/gakusei.png" alt="学生写真"></image></p>
+        </div>
+        <!-- 個人情報 -->
+        <div class="col-md-4" style="padding-top: 20px;">
+          <dl class="list-group">
+            <dt>名前</dt>
+            <dd>芝浦　太郎</dd>
+            <dt>生年月日</dt>
+            <dd>1999年8月20日</dd>
+            <dt>学歴</dt>
+            <dd>芝浦工業大学工学部情報工学科</dd>
+            <dt>スキル</dt>
+            <dd>HTML/CSS/JavaScript　資料作成</dd>
+            <dt>資格</dt>
+            <dd>基本情報技術者/電気工事士2種/普通免許</dd>
+          </dl>
+        </div>
+        <!-- 評価 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header" style="text-align: center; background: #009999; color: white;"><strong>評価</strong></div>
+            <div class="card-body" style="background: white; text-align: center;"><h1>3.0点</h1></div>
+            <div class="card-footer" style="text-align: center; background: white;">★★★☆☆</div>
+          </div>
+        </div>
+      </div>
+      <!-- 自己紹介 -->
+      <div class="profbox">
+        <div class="w3-container w3-teal"><h3>自己紹介</h3></div>
+        <div class="w3-container" style="background: white;"><p>精一杯頑張ります！</p></div>
+      </div>
+      <!-- 作業関連 -->
+      <div class="profbox">
+        <div class="w3-container w3-teal"><h3>作業一覧</h3></div>
+        <!-- 作業一覧 -->
+        <div class="w3-container" style="background: white;">
+        <ul class="list-group" style="list-style:none; margin-top: 10px;">
+          <div class="list-group-item" style="border: 1px solid #333">
+            <div class="row">
+              <li class="col-md-6">作業名</li>
+              <li class="col-md-2" style="text-align: center;"><a href=></a></a></li>
+              <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+              <li class="col-md-2" style="text-align: center;">作業中</li>
+            </div>
+          </div>
+          <div class="list-group-item" style="border: 1px solid #333">
+            <div class="row">
+              <li class="col-md-6">作業名</li>
+              <li class="col-md-2" style="text-align: center;"><a href=>Yes</a> or <a href=>No</a></li>
+              <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+              <li class="col-md-2" style="text-align: center;">依頼中</li>
+            </div>
+          </div>
+          <div class="list-group-item" style="border: 1px solid #333">
+            <div class="row">
+              <li class="col-md-6">作業名</li>
+              <li class="col-md-2" style="text-align: center;"><a href="#comment" data-toggle="collapse"></a></li>
+              <li class="col-md-2" style="text-align: center;"><a href=>DM</a></li>
+              <li class="col-md-2" style="text-align: center;">完了</li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+          
+          
+                      
+          

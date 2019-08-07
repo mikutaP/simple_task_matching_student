@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def show
-    byebug
   end
-  def profile
+  def sprof
   end
 end
